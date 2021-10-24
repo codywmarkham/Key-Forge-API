@@ -1,0 +1,27 @@
+{
+  "name": "key-forge-api",
+  "version": "1.0.0",
+  "description": "REST API For the Key Forge React App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codywmarkham/Key-Forge-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codywmarkham/Key-Forge-API/issues"
+  },
+  "homepage": "https://github.com/codywmarkham/Key-Forge-API#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.14"
+  }
+}
