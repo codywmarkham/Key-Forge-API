@@ -1,11 +1,13 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-const UserSchema = new mongoose.Schema({
-    username:{
-        type:String,
-        require: true, 
-        min:3,
-        unique: true,
+const UserSchema = new mongoose.Schema(
+  {
+    username: {
+      type: String,
+      require: true,
+      min: 3,
+      max: 20,
+      unique: true,
     },
     email: {
       type: String,
@@ -50,9 +52,9 @@ const UserSchema = new mongoose.Schema({
       type: String,
       max: 50,
     },
-    Focus: {
-      type: String,
-      max: 150,
+    relationship: {
+      type: Number,
+      enum: [1, 2, 3],
     },
   },
   { timestamps: true }
